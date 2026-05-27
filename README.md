@@ -15,7 +15,7 @@ It includes:
 - Git installed
 
 ## Connection Guide
-On The Raspberry Pi, Pins 1-9 are located on the header pins on the left hand side closest to the SD Card.
+On The Raspberry Pi, Pins 1–9 are located on the header pins on the left hand side closest to the SD Card.
 
 | Connection | Raspberry Pi | SSD1306 |  
 |------------|--------------|---------|  

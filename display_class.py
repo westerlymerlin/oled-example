@@ -31,7 +31,6 @@ class LcdDisplayClass:
         self.image = Image.new('1', (self.width, self.height), color=0)
         self.draw = ImageDraw.Draw(self.image)
         self.font = ImageFont.load_default(11)
-        self.text = ''
         try:
             i2c = board.I2C()
             output = i2c.scan()
@@ -39,7 +38,8 @@ class LcdDisplayClass:
             if len(output) > 0:
                 if self.i2c_address in output:
                     print('display i2c device found')
-                    self.led_display = adafruit_ssd1306.SSD1306_I2C(self.width, self.height, i2c, addr=self.i2c_address)
+                    self.led_display = adafruit_ssd1306.SSD1306_I2C(self.width, self.height, i2c,
+                                                                    addr=self.i2c_address)
         except ValueError:
             print('Display not found')
         except NameError:
