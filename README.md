@@ -15,7 +15,7 @@ It includes:
 - Git installed
 
 ## Connection Guide
-On The Raspberry Pi, Pins 1-9 are located on the header pins on the left hand side closest to the SD Card.
+On The Raspberry Pi, Pins 1–9 are located on the header pins on the left hand side closest to the SD Card.
 
 | Connection | Raspberry Pi | SSD1306 |  
 |------------|--------------|---------|  
@@ -67,7 +67,7 @@ you will get a response line this if the SSD1306 is detected at 0x3C:
 
 ### 5) Clone this repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/westerlymerlin/oled-example.git
 cd oled-example
 ```
 
