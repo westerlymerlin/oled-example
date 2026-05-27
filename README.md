@@ -67,7 +67,7 @@ you will get a response line this if the SSD1306 is detected at 0x3C:
 
 ### 5) Clone this repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/westerlymerlin/oled-example.git
 cd oled-example
 ```
 
