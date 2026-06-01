@@ -19,10 +19,10 @@ representations, and managing dynamic visual effects. The module uses I2C commun
 to interact with the OLED display.
 
 [main](./main.md)  
-Module for initializing and displaying text on an LCD display.
+Module for initialising and displaying text on an OLED display.
 
 This module interacts with the `LcdDisplayClass` from `display_class` to
-control the LCD display and show text-based content. The functionality includes
+control the OLED display and show text-based content. The functionality includes
 handling the setup of an LCD screen and rendering the desired text onto the
 screen.
 
