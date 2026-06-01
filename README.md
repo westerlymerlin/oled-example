@@ -27,7 +27,7 @@ On The Raspberry Pi, Pins 1–9 are located on the header pins on the left hand 
 
 ## Step by step setup guide
 
-### 1) run an update on the Raspberry Pi
+### 1) Run an update on the Raspberry Pi
 ```bash
 sudo apt update
 sudo apt upgrade
@@ -41,7 +41,7 @@ sudo raspi-config
 - choose `I5 I2C`   
 - choose `yes`  
 
-### 3) install the `python3-smbus` and `i2c-tools` packages
+### 3) Install the `python3-smbus` and `i2c-tools` packages
 
 ```bash
 sudo apt install python3-smbus i2c-tools
@@ -52,7 +52,7 @@ Run the following command:
 ```bash
 sudo i2cdetect -y 1 
 ```
-you will get a response line this if the SSD1306 is detected at 0x3C:
+you will get a response line this if the SSD1306 is connected, it will be detected at 0x3C:
 ```bash
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:                         -- -- -- -- -- -- -- --
@@ -83,22 +83,21 @@ If `python3` is not available, try:
 python -m venv .venv
 ```
 
-### 3) Activate the virtual environment
+### 7) Activate the virtual environment
 Linux / Raspberry Pi OS:
 ```bash
 source .venv/bin/activate
 ```
 
-### 4) Install the python dependencies
+### 8) Install the python dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-## Run the example
+### 9) Run the example
 ```bash
 python main.py
 ```
-
 Expected behaviour: the OLED display shows `Hello World`.
 
 ## Notes
